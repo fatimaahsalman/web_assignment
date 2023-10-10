@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-reactroot>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeoplePerHour.com - Hire Freelancers</title>
+    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo.png" width="200" /> 
+        </div>
+        <div class="nav-items">
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="&#128269; SEARCH" >
+            </div>
+            <div class="menu" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-list">
+                <li>HOW IT WORKS</li>
+                <li>LOGIN</li>
+                <li>SIGNUP</li>
+                <li style="color: orangered;">FREELANCER?</li>
+            </ul>
+            <div class="sidebar" id="sidebar">
+                <span class="close-btn" onclick="closeSidebar()">&times;</span>
+                <div class="sidebar-items">
+                    <div class="item" style="color:#34A8CA">SEARCH</div>
+                    <div class="item">HOW IT WORKS</div>
+                    <div class="item">LOGIN</div>
+                    <div class="item">SIGNUP</div>
+                    <div style="color: orangered; font-size: 14px;padding: 18px;margin: 12px;">FREELANCER?</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="submenu">
+        <a href="#">Technology & Programming</a>
+        <a href="#">Writing & Translation</a>
+        <a href="#">Design</a>
+        <a href="#">Digital Marketing</a>
+        <a href="#">Video, Photo & Image</a>
+        <a href="#">Business</a>
+        <a href="#">Music & Audio</a>
+        <a href="#">Marketing, Branding & Sales</a>
+        <a href="#">Social Media</a>
+    </div>
+
+    <div class="submenu-dropdown">
+        <select id="category-dropdown">
+            <option value="" disabled selected>Browse by Category</option>
+            <option value="technology">Technology & Programming</option>
+            <option value="writing">Writing & Translation</option>
+            <option value="design">Design</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="media">Video, Photo & Image</option>
+            <option value="business">Business</option>
+            <option value="music">Music & Audio</option>
+            <option value="branding">Marketing, Branding & Sales</option>
+            <option value="social">Social Media</option>
+        </select>
+    </div>
+    
+
+    <div class="mainsection">
+        <div class="textandsearch" > 
+            <h1 class="maintext">Make bright ideas happen</h1>
+            <h3 class="subtext" >Access global talent on the freelancer website trusted by over 1 million businesses worlwide. </h3>
+            <div class="custom-search-wrapper">
+                <div>
+                    <input type="text" class="custom-search-input" placeholder="Try &quot;graphic design&quot;">
+                </div>
+                <span class="custom-search-icon">&#128269;</span>
+            </div>
+            
+        </div>
+        <div class="mainimg">
+            <img src="./hero.webp" style="width: 100%; height: auto; display: block;">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
